@@ -478,7 +478,7 @@
   <div class="footer-copy">© 2026 Socratech · Tous droits réservés</div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 // ═══════════════════════════════════════════════════════════════════
 //  QUESTIONS — 14 axes
 // ═══════════════════════════════════════════════════════════════════
@@ -1429,11 +1429,4 @@ async function generatePDF() {
 
   // Contact
   doc.setFillColor(18,22,28); doc.roundedRect(14, 245, W-28, 38, 2,2,'F');
-  doc.setFillColor(232,240,74); doc.rect(14,245,3,38,'F');
-  doc.setTextColor(232,240,74); doc.setFontSize(9); doc.setFont('helvetica','bold');
-  doc.text('CONTACT', 22, 257);
-  doc.setTextColor(180,200,230); doc.setFontSize(8); doc.setFont('helvetica','normal');
-  doc.text('Romain Brubach', 22, 266);
-  doc.setTextColor(107,127,154); doc.setFontSize(7.5);
-  doc.text('romainbrubach@socratech.fr  |  06 46 38 21 05', 22, 274);
-  doc.text('231 rue Saint-Honore
+  doc.setFillColor(232,240,74); doc.rect(14,245,3,38,'
