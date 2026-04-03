@@ -468,17 +468,17 @@
     <div class="footer-sub">231 rue Saint-Honoré · 75001 Paris · RCS 452 303 753</div>
   </div>
   <div class="footer-links">
-    <a href="mailto:romainbrubach@socratech.fr">romainbrubach@socratech.fr</a>
+    <a href="/cdn-cgi/l/email-protection#4f3d20222e26212d3d3a2d2e2c270f3c202c3d2e3b2a2c2761293d"><span class="__cf_email__" data-cfemail="3d4f52505c54535f4f485f5c5e557d4e525e4f5c49585e55135b4f">[email&#160;protected]</span></a>
     <a href="tel:+33646382105">06 46 38 21 05</a>
   </div>
   <div class="footer-links">
-    <a href="mailto:romainbrubach@socratech.fr">romainbrubach@socratech.fr</a>
+    <a href="/cdn-cgi/l/email-protection#23514c4e424a4d4151564142404b63504c4051425746404b0d4551"><span class="__cf_email__" data-cfemail="f88a97959991969a8a8d9a999b90b88b979b8a998c9d9b90d69e8a">[email&#160;protected]</span></a>
     <a href="tel:+33646382105">06 46 38 21 05</a>
   </div>
   <div class="footer-copy">© 2026 Socratech · Tous droits réservés</div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // ═══════════════════════════════════════════════════════════════════
 //  QUESTIONS — 14 axes
 // ═══════════════════════════════════════════════════════════════════
@@ -1429,4 +1429,24 @@ async function generatePDF() {
 
   // Contact
   doc.setFillColor(18,22,28); doc.roundedRect(14, 245, W-28, 38, 2,2,'F');
-  doc.setFillColor(232,240,74); doc.rect(14,245,3,38,'
+  doc.setFillColor(232,240,74); doc.rect(14,245,3,38,'F');
+  doc.setTextColor(232,240,74); doc.setFontSize(9); doc.setFont('helvetica','bold');
+  doc.text('CONTACT', 22, 257);
+  doc.setTextColor(180,200,230); doc.setFontSize(8); doc.setFont('helvetica','normal');
+  doc.text('Romain Brubach', 22, 266);
+  doc.setTextColor(107,127,154); doc.setFontSize(7.5);
+  doc.text('romainbrubach@socratech.fr  |  06 46 38 21 05', 22, 274);
+  doc.text('231 rue Saint-Honore, 75001 Paris France', 22, 281);
+
+  // Footer
+  doc.setTextColor(55,70,95); doc.setFontSize(6.5); doc.setFont('helvetica','italic');
+  doc.text('SOCRATECH — 231 rue Saint-Honore 75001 Paris — RCS 452 303 753 — TVA FR96452303753 — Copyright © 2019 Tous droits reserves.', W/2, H-6, {align:'center'});
+
+  doc.save('RUN_Risk_Rapport.pdf');
+}
+
+// ── INIT ──
+render();
+</script>
+</body>
+</html>
