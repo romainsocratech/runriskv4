@@ -468,7 +468,6 @@
     <div class="footer-sub">231 rue Saint-Honoré · 75001 Paris · RCS 452 303 753</div>
   </div>
   <div class="footer-links">
-    <a href="plaquette_v12.pdf" target="_blank">Plaquette</a>
     <a href="mailto:romainbrubach@socratech.fr">romainbrubach@socratech.fr</a>
     <a href="tel:+33646382105">06 46 38 21 05</a>
   </div>
@@ -479,7 +478,7 @@
   <div class="footer-copy">© 2026 Socratech · Tous droits réservés</div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // ═══════════════════════════════════════════════════════════════════
 //  QUESTIONS — 14 axes
 // ═══════════════════════════════════════════════════════════════════
@@ -1437,17 +1436,4 @@ async function generatePDF() {
   doc.text('Romain Brubach', 22, 266);
   doc.setTextColor(107,127,154); doc.setFontSize(7.5);
   doc.text('romainbrubach@socratech.fr  |  06 46 38 21 05', 22, 274);
-  doc.text('231 rue Saint-Honore, 75001 Paris France', 22, 281);
-
-  // Footer
-  doc.setTextColor(55,70,95); doc.setFontSize(6.5); doc.setFont('helvetica','italic');
-  doc.text('SOCRATECH — 231 rue Saint-Honore 75001 Paris — RCS 452 303 753 — TVA FR96452303753 — Copyright © 2019 Tous droits reserves.', W/2, H-6, {align:'center'});
-
-  doc.save('RUN_Risk_Rapport.pdf');
-}
-
-// ── INIT ──
-render();
-</script>
-</body>
-</html>
+  doc.text('231 rue Saint-Honore
